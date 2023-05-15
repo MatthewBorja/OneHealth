@@ -9,31 +9,34 @@
     <!-- calls registerStyle.css page in public folder-->
     <link rel="stylesheet" href="/assets/css/registerStyle.css">
 </head>
+<body>
+
     <!-- sign up container -->
     <div class="container">
         <div class="title">Sign Up</div>
-        <form action="#">
+        <form action="register.php" method="post">
             <div class="user-info">
                 <div class="info">
                     <span class="infoTitle">First Name</span>
-                    <input type="text" placeholder="first name" required>
+                    <input type="text" id="firstName" name="firstName" placeholder="first name" required>
                 </div>
                 <div class="info">
                     <span class="infoTitle">Last Name</span>
-                    <input type="text" placeholder="last name" required>
+                    <input type="text" id="lastName" name="lastName" placeholder="last name" required>
                 </div>
                 <div class="info">
                     <span class="infoTitle">Email</span>
-                    <input type="email" placeholder="email" required>
+                    <input type="email" id="email" name="email" placeholder="email" required>
                 </div>
                 <div class="info">
                     <span class="infoTitle">Password</span>
-                    <input type="password" placeholder="password" required>
+                    <input type="password" id="password" name="password" placeholder="password" required>
                 </div>
                 <div class="info">
                     <span class="infoTitle">Confirm Password</span>
-                    <input type="confirm" placeholder="confirm password" required>
+                    <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="confirm password" required>
                 </div>
+                <!--
                 <div class="info">
                     <span class="infoTitle">Address</span>
                     <input type="text" placeholder="address" required>
@@ -42,10 +45,12 @@
                     <span class="infoTitle">Phone Number</span>
                     <input type="number" placeholder="phone number" required>
                 </div>
+                
                 <div class="info">
                     <span class="infoTitle">Job Title</span>
                     <input type="text" placeholder="job title" required>
                 </div>
+                -->
             </div>
             <div class="button">
                 <input type="submit" value="Sign Up">
