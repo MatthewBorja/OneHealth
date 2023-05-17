@@ -3,17 +3,6 @@
 *   You can add new "views" here. Following the following format*
 *   you must also add this new view to home-routes.js           *
 *****************************************************************/
-<<<<<<< Updated upstream
-const homeScreen = (req, res) => {
-    res.render('log-in', {layout: 'log-in'});
-}
-
-const register = (req, res) => {
-    res.render('register', {layout: 'register'});
-}
-
-const indexView = (req, res) => {
-=======
 
 const index = (req, res, next) => {
     res.render('home', {
@@ -39,7 +28,6 @@ const profile = (req, res, next) => {
 };
 
 /*const indexView = (req, res) => {
->>>>>>> Stashed changes
     res.render('home');
 }*/
 
@@ -52,7 +40,7 @@ const billingView = (req, res) => {
 }
 
 const patientsView = (req, res) => {
-    res.render('patients')
+    res.render('patients');
 }
 
 const profileView = (req, res) => {
@@ -67,21 +55,20 @@ const patient1View = (req, res) => {
     res.render('patient1');
 }
 
+const patientfileView = (req, res) => {
+    res.render('patient-file');
+}
+
 module.exports = {
-<<<<<<< Updated upstream
-    homeScreen,
-    register,
-    indexView,
-=======
     index,
     loginView,
     profile,
     //indexView,
->>>>>>> Stashed changes
     staffView,
     billingView,
     patientsView,
     profileView,
     profileView1,
-    patient1View
+    patient1View,
+    patientfileView
 }
